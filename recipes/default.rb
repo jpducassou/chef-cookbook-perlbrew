@@ -17,9 +17,7 @@
 # limitations under the License.
 #
 
-include_recipe "build-essential"
-
-%w{ patch perl curl }.each do |p|
+%w{ patch perl curl build-essential }.each do |p|
   package p
 end
 
